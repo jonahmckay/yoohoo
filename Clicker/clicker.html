@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="score.js"></script>
+
+</head>
+
+	<body style="background-color: powderblue;">
+
+	<br><br><br>
+	
+	
+	<div class=all>
+		<br>
+	
+		<p id="myStatus">Noob</p>
+	
+		<button onclick=updateScore() class="clickMe">CLICK ME</button>
+
+
+		<br>
+
+
+		<p id="scoreVal">Score: 0 points</p>
+
+
+		<p id="multi">Multiplier: x1</p>
+
+
+		<button class="button" onclick=upgrade() id="upgrade">Upgrade 20</button>
+
+		
+
+		<button class="button" onclick=buyAutoclick() id="auto">Autoclick 100</button>
+
+	</div>
+		
+		
+		
+	<div style="visibility: hidden;" class="popup" id="pop1">
+		<p> STOP </p>
+		<br><br><br>
+		<p>Please Enter Your E-Mail To Continue Playing :) </p>
+		<br>
+		<form>
+		Personal Information:
+		<input type="text">
+		</form>
+		<button type="button" id="enterInfo" onclick=closePopup()>Enter</button>
+	</div>
+
+
+	<div style="visibility: hidden;" class="popup" id="pop2">
+		<p> STOP </p>
+		<br><br><br>
+		<p>Please Enter Your Bank Account Info :) </p>
+		<br>
+		<form>
+		Personal Information:
+		<input type="text">
+		</form>
+		<button type="button" id="enterInfo" onclick=closePopup()>Enter</button>
+	</div>
+	
+	
+	<div style="visibility: hidden;" class="popup" id="pop3">
+		<p> STOP </p>
+		<br><br><br>
+		<p>Please Enter your Current Location. </p>
+		<br>
+		<form>
+		Personal Information:
+		<input type="text">
+		</form>
+		<button type="button" id="enterInfo" onclick=closePopup()>Enter</button>
+	</div>
+
+	<p id="message"> Try to get to 50,000!</p>
+
+	</body>
+</html>
