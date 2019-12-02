@@ -54,7 +54,7 @@
 
     /* initiate animation */
     animation-name: smiley2;
-    animation-duration: 2s;
+    animation-duration: 2.2s;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
     animation-direction: normal;
@@ -62,11 +62,11 @@
 
   /* animation instructions  from to or % */
   @keyframes smiley2 {
-    0% {right:43%; bottom:25%; -webkit-transform: rotate(0deg)}
-    25% {right:25%; bottom:45%; -webkit-transform: rotate(-270deg)}
-    50% {right:43%; bottom:60%; -webkit-transform: rotate(180deg)}
-	75% {right:65%; bottom:45%; -webkit-transform: rotate(-90deg)}
-    100% {right:43%; bottom:25%; -webkit-transform: rotate(-360deg)}
+    0% {right:40%; bottom:25%; -webkit-transform: rotate(0deg)}
+    25% {right:23%; bottom:45%; -webkit-transform: rotate(-270deg)}
+    50% {right:40%; bottom:60%; -webkit-transform: rotate(180deg)}
+	75% {right:60%; bottom:45%; -webkit-transform: rotate(-90deg)}
+    100% {right:40%; bottom:25%; -webkit-transform: rotate(-360deg)}
   }
   
 
