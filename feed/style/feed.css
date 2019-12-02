@@ -6,6 +6,7 @@
   margin-bottom: 10px;
   vertical-align: middle;
 }
+
 .topBannerFrontLeft {
   width: 433px;
   height: 109px;
@@ -13,29 +14,92 @@
   display: inline-block;
   float: left;
 }
-.instructions {
-  background-color:#B2B2B2;
-  width: 70%;
+
+.menuItems {
+  color: Gray;
+  text-align: center;
+  padding: 10px 25px;
+  margin-top: 10px;
+  display: inline-block;
+  float: right;
 }
-.menuItems{
-color: Gray;
-text-align: center;
-padding: 10px 25px;
-margin-top: 10px;
-display: inline-block;
-float: right;
-}
+
 .menuItems a {
-font-family: "Segoe Print", sans-serif;
-font-size: 20px;
-color: #B2B2B2;
+  font-family: "Segoe Print", sans-serif;
+  font-size: 20px;
+  color: #B2B2B2;
 }
+
 .menuItems a:link {
-text-align: center;
-text-decoration: none;
-color: white;
+  text-align: center;
+  text-decoration: none;
+  color: white;
 }
 
 .menuItems a:visited {
-color: white;
+  color: white;
+}
+
+.postBox {
+  width: 60%;
+  background-color: white;
+  font-family: "Segoe UI", sans-serif;
+  padding: 20px 60px;
+}
+
+.postTopSentence {
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.postRuleDivider {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid gray;
+}
+
+.postUserInformation {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.postUserInformation p {
+  padding-left: 15px;
+}
+
+.postUserInformation img {
+  width: 70px;
+  height: 70px;
+}
+
+.post {
+  font-size: 25px;
+}
+
+.post img {
+  width: 100%;
+  height: auto;
+}
+
+.postIcons {
+  display: flex;
+  box-sizing: border-box;
+  padding-top: 15px;
+  float: left;
+}
+
+.postIcons img {
+  width: 50px;
+  height: 50px;
+}
+
+.postIcons p {
+  width: auto;
+  margin-top: 5px;
+  padding-left: 5px;
+  padding-right: 15px;
+  font-size: 15px;
 }
