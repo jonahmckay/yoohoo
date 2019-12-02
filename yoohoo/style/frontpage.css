@@ -1,6 +1,6 @@
 #loginButton
 {
-	background-color: lightblue;
+	background-color: #B9E2FA;
 	width:80%;
 	margin-top:20px;
 	padding-left:10px;
@@ -10,7 +10,7 @@
 
 #createButton
 {
-	background-color: lightgreen;
+	background-color: #EF851F;
 	width:60%;
 }
 
@@ -24,6 +24,7 @@
 	align-items: center;
 	border-radius:2px;
 	padding-bottom:10px;
+	margin-top: 75px;
 	
 }
 
@@ -38,6 +39,16 @@
 	margin-top:20px;
 	box-sizing: border-box;
 	
+}
+#cookieFooter
+{
+	background-color:#f4f2e3;
+	margin-top:50px;
+	padding: 30px;
+	display:flex;
+	flex-direction:column;
+	text-align: center;
+	align-items: center;
 }
 
 #forgotPassword

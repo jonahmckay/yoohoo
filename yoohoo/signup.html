@@ -6,29 +6,35 @@
 		<link rel="stylesheet" href="style/main.css">
 		<link rel="stylesheet" href="style/signup.css">
 		<script defer src="js/signup.js"></script>
+		<script defer src="js/cookie-handler.js"></script>
 	</head>
 	
 	<div class="verticalBodyBox">
+	<div class="topBannerBack">
+				<div class="topBannerFront">
+				<img src="images/topBannerFit.png" alt="YooHoo logo" width="603px" height="151px">
+			</div>
+			</div>
 		<div class="signupBody">
 			<h1>Sign up for YooHoo today!</h1>
-			<input placeholder="Full Name"></input>
+			<input class="bigInput" placeholder="Full Name"></input>
 			
 			Date of birth
-			<select id="day"><option value=undefined>Day</option></select>
+			<span><select id="day"><option value=undefined>Day</option></select>
 			<select id="month"><option value=undefined>Month</option></select>
-			<select id="year"><option value=undefined>Year</option></select>
+			<select id="year"><option value=undefined>Year</option></select></span>
 			</p>
 			Interests: Check all that apply
-			</p>
+			<div id="interestBox">
 			<input type="checkbox" id="interestCooking">Cooking
-			</p>
 			<input type="checkbox" id="interestArt"> Art
-			</p>
 			<input type="checkbox" id="interestTechnology"> Technology
-			</p>
 			<input type="checkbox" id="interestTravel"> Travel
-			</p>
 			<input type="checkbox" id="interestNews"> News
+			</div>
+			
+			<div class="ruleDivider"></div>
+			<button class="actionButtonOrange" id="registerButton" onclick="register()">Register Your Account</button>
 		</div>
 	</div>
 </html>

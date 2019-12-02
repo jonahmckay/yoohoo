@@ -6,13 +6,17 @@
 		<title>YooHoo!</title>
 		<link rel="stylesheet" href="style/main.css">
 		<link rel="stylesheet" href="style/frontpage.css">
+		<script defer src="js/cookie-handler.js"></script>
+		<script defer src="js/cookie-editor.js"></script>
 	</head>
 
 	<body>
 		<div class="verticalBodyBox">
-			<div id="yoohooFrontPageLogoHeader">
-			
+			<div class="topBannerBack">
+				<div class="topBannerFront">
+				<img src="images/topBannerFit.png" alt="YooHoo logo" width="603px" height="151px">
 			</div>
+		</div>
 			<div id="loginBox">
 			
 			<input class="loginInput" id="email" placeholder="Email or Phone Number"></input>
@@ -23,9 +27,17 @@
 			<a href="google.com">Forgot Account?</a>
 			</div>
 			<div class="ruleDivider"></div>
-			<button id="createButton" class="actionButton" href="signup.html">Create New Account</button>
+			<button id="createButton" class="actionButton" onclick="location.href='signup.html';">Create New Account</button>
+			</form>
+			</div>
+			
+			<div id="cookieFooter">
+				This page uses cookies. By using this website, you consent to the storing of cookies on your computer.
+				</p>
+				<button class="actionButton" onclick="document.getElementById('cookieFooter').style.visibility = 'hidden'">I understand</button>
 			</div>
 		</div>
+		
 	</body>
 
 </html>
