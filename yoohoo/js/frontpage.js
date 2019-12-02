@@ -1,12 +1,11 @@
-function setTempUsername(nameGiven)
+function login()
 {
-	Cookies.set("Tempusername", nameGiven, {expires: 6000 });
-}
-
-function login(nameGiven)
-{
-	if (Cookies.get("username") != null)
+	if (document.getElementById("email").value == Cookies.get("username") && document.getElementById("email").value != null)
 	{
-		
+		document.location.href = "feed.html";
+	}
+	else
+	{
+		alert("Incorrect username.");
 	}
 }

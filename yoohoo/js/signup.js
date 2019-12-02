@@ -58,7 +58,8 @@ function register()
 	}
 	else
 	{
-		window.location.href = 'explorepage.html';
+		makeNewAccount(document.getElementById('usernameInput').value, document.getElementById('nameInput').value, calculateAge(), null);
+		window.location.href = 'feed.html';
 	}
 }
 populateDateDropdowns();

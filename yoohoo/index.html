@@ -8,6 +8,8 @@
 		<link rel="stylesheet" href="style/frontpage.css">
 		<script defer src="js/cookie-handler.js"></script>
 		<script defer src="js/cookie-editor.js"></script>
+		<script defer src="js/main.js"></script>
+		<script defer src="js/frontpage.js"></script>
 	</head>
 
 	<body>
@@ -22,7 +24,7 @@
 			<input class="loginInput" id="email" placeholder="Email or Phone Number"></input>
 			<input class="loginInput" type="password" id="password" placeholder="Password"></input>
 			
-			<button id="loginButton" class="actionButton">Log in</button>
+			<button id="loginButton" class="actionButton" onclick="login();">Log in</button>
 			<div id="forgotPassword">
 			<a href="google.com">Forgot Account?</a>
 			</div>
@@ -34,7 +36,7 @@
 			<div id="cookieFooter">
 				This page uses cookies. By using this website, you consent to the storing of cookies on your computer.
 				</p>
-				<button class="actionButton" onclick="document.getElementById('cookieFooter').style.visibility = 'hidden'">I understand</button>
+				<button class="actionButton" onclick="document.getElementById('cookieFooter').style.visibility = 'hidden';">I understand</button>
 			</div>
 		</div>
 		

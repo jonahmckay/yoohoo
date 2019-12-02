@@ -1,0 +1,1 @@
+document.getElementById('profilename').innerHTML = Cookies.get("realname");
