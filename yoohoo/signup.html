@@ -5,8 +5,9 @@
 		<title>YooHoo!</title>
 		<link rel="stylesheet" href="style/main.css">
 		<link rel="stylesheet" href="style/signup.css">
-		<script defer src="js/signup.js"></script>
 		<script defer src="js/cookie-handler.js"></script>
+		<script defer src="js/cookie-editor.js"></script>
+		<script defer src="js/signup.js"></script>
 	</head>
 	
 	<div class="verticalBodyBox">
@@ -17,7 +18,8 @@
 			</div>
 		<div class="signupBody">
 			<h1>Sign up for YooHoo today!</h1>
-			<input class="bigInput" placeholder="Full Name"></input>
+			<input class="bigInput" id="usernameInput" placeholder="Email or username"></input>
+			<input class="bigInput" id="nameInput" placeholder="Full Name"></input>
 			
 			Date of birth
 			<span><select id="day"><option value=undefined>Day</option></select>

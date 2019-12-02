@@ -1,10 +1,5 @@
 var expiryTime = 600000;
 
-function setTempUsername(nameGiven)
-{
-	Cookies.set("Tempusername", nameGiven, {expires: 6000 });
-}
-
 function checkValidLogin(nameGiven)
 {
 	if (Cookies.get("username") != null)
@@ -17,14 +12,16 @@ function checkValidLogin(nameGiven)
 	return false;
 }
 
-function setUsernameFromTemp()
+function getProgressValue()
 {
-	Cookies.set("username", Cookies.get("Tempusername"), {expires: expiryTime});
+	return Cookies.get("progress");
 }
 
-function makeNewAccount(realName, age, interests)
+
+function makeNewAccount(username, realname, age, interests)
 {
-	setUsernameFromTemp();
+	Cookies.set("username", username, {expires: expiryTime});
+	Cookies.set("realname", realname, {expires: expiryTime});
 	Cookies.set("age", age, {expires: expiryTime});
 	Cookies.set("interests", interests, {expires: expiryTime});
 	setProgress("welcome");

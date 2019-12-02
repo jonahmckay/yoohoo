@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Feed</title>
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" href="style/feed.css">
+  <script defer src="js/cookie-handler.js"></script>
+  <script defer src="js/cookie-editor.js"></script>
+  <script defer src="js/main.js"></script>
+  <script defer src="js/feed.js"></script>
+  <style>
+  </style>
+</head>
+<body style ="100%">
+<div class="verticalBodyBox">
+<!--Top banner:-->
+  <div class="topBannerBack">
+  	<div class="topBannerFrontLeft">
+      <img src="images/topBannerFit.png" alt="YooHoo logo" width="603px" height="151px">
+    </div>
+    <div class= "menuItems"><a href="page.html">Legal privacy settings</a></div>
+    <div class= "menuItems"><a href="page.html">Game</a></div>
+    <div class= "menuItems"><a href="page.html">Your Profile</a></div>
+    <div class= "menuItems" style="background-color:#B2B2B2"><a href="feed.html">Feed</a></div>
+  </div>
+  <div class="tooltipparent">
+  <div class="tooltip" id="introductiontooltip">
+    <p>Welcome to YooHoo! This introductory tour is intended to give you an overview of all the website's features.</p>
+      <button type="button" class="actionButton" onclick="transitionTooltip('introductiontooltip', 'introductiontooltip2')">
+        Next
+      </button>
+    </a>
+  </div>
+  <div class="tooltip" id="introductiontooltip2">
+    <p>This is the Feed. Here, you can see what YooHooites are posting, and you can find new people to follow here.</p>
+      <button type="button" class="actionButton" onclick="transitionTooltip('introductiontooltip2', 'introductiontooltip3')">
+        Next
+      </button>
+    </a>
+  </div>
+  <div class="tooltip" id="introductiontooltip3">
+    <p>Next, we'll take a look at your profile, and the various ways you can add information about yourself to tailor YooHoo to Yoo!</p>
+      <button type="button" class="actionButton" onclick="progressAndCloseTooltip('introductiontooltip3', 'goingtoprofile')">
+        Close
+      </button>
+	  <button type="button" class="actionButton" onclick="progressAndCloseTooltip('introductiontooltip3', 'goingtoprofile'); window.location.href = 'yourprofile.html';">
+        Go to My Profile
+      </button>
+    </a>
+  </div>
+</div>
+</body>
+</html>

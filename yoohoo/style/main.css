@@ -61,14 +61,12 @@ body
 /* tooltip based on https://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip_arrow_top */
 
 
-.tooltipparent {
-  position: relative;
-  display: inline-block;
-}
+
 
 .tooltip {
   visibility: hidden;
-  width: 200px;
+  width: 500px;
+  height: 200px;
   background-color: #EF851F;
   color: #fff;
   text-align: center;
@@ -76,7 +74,7 @@ body
   padding: 5px 0;
   position: absolute;
   z-index: 1;
-  top: 150%;
+  top: 50%;
   left: 50%;
   margin-left: 60px;
   padding-bottom:20px;
