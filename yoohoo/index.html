@@ -4,6 +4,7 @@
 	<!-- https://gist.github.com/lu1s/974020 cookie handler-->
 	<head>
 		<title>YooHoo!</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
 		<link rel="stylesheet" href="style/main.css">
 		<link rel="stylesheet" href="style/frontpage.css">
 		<script defer src="js/cookie-handler.js"></script>
@@ -21,12 +22,12 @@
 		</div>
 			<div id="loginBox">
 			
-			<input class="loginInput" id="email" placeholder="Email or Phone Number"></input>
+			<input class="loginInput" id="email" placeholder="Email or username"></input>
 			<input class="loginInput" type="password" id="password" placeholder="Password"></input>
 			
 			<button id="loginButton" class="actionButton" onclick="login();">Log in</button>
 			<div id="forgotPassword">
-			<a href="google.com">Forgot Account?</a>
+			<a onclick="document.getElementById('email').value = Cookies.get('username');" id='forgotaccount'>Forgot Account?</a>
 			</div>
 			<div class="ruleDivider"></div>
 			<button id="createButton" class="actionButton" onclick="location.href='signup.html';">Create New Account</button>
