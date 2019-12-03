@@ -11,7 +11,7 @@ function populateDateDropdowns()
 	}
 	var monthValues = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 	
-	for (var i = 1; i < 12; i++)
+	for (var i = 0; i < 12; i++)
 	{
 		monthElement.innerHTML += "<option value=" + i + ">" + monthValues[i] + "</option>";
 	}
@@ -58,8 +58,15 @@ function register()
 	}
 	else
 	{
-		makeNewAccount(document.getElementById('usernameInput').value, document.getElementById('nameInput').value, calculateAge(), null);
-		window.location.href = 'feed.html';
+		if (document.getElementById('usernameInput').value != "")
+		{
+			makeNewAccount(document.getElementById('usernameInput').value, document.getElementById('nameInput').value, calculateAge(), null);
+			window.location.href = 'feed.html';
+		}
+		else
+		{
+			alert("Invalid username")
+		}
 	}
 }
 populateDateDropdowns();
