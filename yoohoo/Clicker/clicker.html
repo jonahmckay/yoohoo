@@ -2,12 +2,44 @@
 <html>
 <head>
 <link rel="icon" href="../favicon.ico" type="image/x-icon"/>
+<link rel="stylesheet" href="../style/main.css">
 <link href="style.css" rel="stylesheet" type="text/css">
+<script defer src="../js/cookie-handler.js"></script>
+<script defer src="../js/cookie-editor.js"></script>
+<script defer src="../js/main.js"></script>
+<script defer src="clickertour.js"></script>
 <script src="score.js"></script>
 
 </head>
 
 	<body style="background-color: #B9E2FA">
+
+		<div class="tooltipparentbottombar">
+	    <div class="tooltip" id="gametooltip">
+	      <p>Welcome to YooClick! YooClick is a simple yet addictive game. Just try to get as many points as possible! (YooHoo is not responsible for any repetitive strain injuries that may occur.)</p>
+	      <button type="button" class="actionButton" onclick="transitionTooltip('gametooltip', 'gametooltip2')">
+	        Next
+	      </button>
+	      </a>
+	    </div>
+	    <div class="tooltip" id="gametooltip2">
+	      <p>That concludes the tour of the interesting parts of the site. We do have a privacy policy, but who would want to see that?</p>
+	      <button type="button" class="actionButton" onclick="transitionTooltip('gametooltip2', 'gametooltip3')">
+	        I certainly don't!
+	      </button>
+				<button type="button" class="actionButton" onclick="transitionTooltip('gametooltip2', 'gametooltip3')">
+	        That sounds important?
+	      </button>
+	      </a>
+	    </div>
+	    <div class="tooltip" id="gametooltip3">
+	      <p>Of course you don't want to see the privacy policy! That concludes this tour. You can go back to the feed and explore other people's profiles. Welcome to YooHoo, and remember, Information Sharing is Information Caring!™</p>
+	      <button type="button" class="actionButton" onclick="progressAndCloseTooltip('gametooltip3', 'finishedgame');">
+	        Finish Tour
+	      </button>
+	      </a>
+	    </div>
+	  </div>
 
 	<!--Top banner:-->
   <div class="topBannerBack">

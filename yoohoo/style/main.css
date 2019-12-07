@@ -30,7 +30,7 @@ body
 {
 	color: #EF851F;
 	border-bottom: #EF851F solid 1px;
-	cursor: default;
+	cursor:pointer;
 }
 
 .actionButton
@@ -90,8 +90,14 @@ body
 	z-index: 0;
 }
 
-
+.tooltip p
+{
+	font-family: Segoe UI, sans-serif !important;
+	font-weight: normal !important;
+	font-size: 20pt !important;
+}
 .tooltip {
+
   visibility: hidden;
   width: 100%;
   height: 200px;
@@ -103,6 +109,8 @@ body
   position: absolute;
   z-index: 1;
   bottom:0;
+
+
 
   margin-bottom:-5px;
   padding-bottom:20px;
