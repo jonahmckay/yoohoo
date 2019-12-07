@@ -36,25 +36,35 @@ color: white;
 color: white;
 }
 
+.feedBox {
+  background-color: rgb(242, 212, 143);
+  width:70%;
+  border-radius: 10px;
+  display: flex;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
 .postBox {
   width: 60%;
-  background-color: white;
+  background-color: rgb(255, 246, 219);
   font-family: "Segoe UI", sans-serif;
   padding: 20px 60px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 5px 5px 2px hsla(0, 0%, 0%, 0.2);
+  border-radius: 5px;
 }
 
 .postTopSentence {
-  font-size: 15px;
+  font-size: 20px;
+  width: 70%;
+  font-family: "Segoe UI", sans-serif;
   font-weight: bold;
   margin-left: auto;
   margin-right: auto;
-}
-
-.postRuleDivider {
-  width: 100%;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  border-bottom: 1px solid gray;
+  padding: 15px 0px;
 }
 
 .postUserInformation {
@@ -72,7 +82,7 @@ color: white;
 }
 
 .post {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .post img {
