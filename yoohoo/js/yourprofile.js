@@ -29,4 +29,9 @@ if (interests.length > 0)
   interests = interests.slice(0, -2);
 }
 document.getElementById('interests').innerHTML = interests;
-document.getElementById('yourFirstPost').innerHTML = Cookies.get("realname")+ ' gained 7 social points for creating an account on ' + Date();
+document.getElementById('yourFirstPost').innerHTML = Cookies.get("realname")+ ' gained 7 social points for creating an account on ' + new Date(2022, 5, 10).toISOString().substring(0, 10);
+
+if (getProgressValue() == "goingtoprofile")
+{
+	revealTooltip("yourprofiletooltip");
+}

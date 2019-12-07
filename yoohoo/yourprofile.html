@@ -3,16 +3,43 @@
 
 <head>
 	<title>Your profile</title>
+	<link rel="stylesheet" href="style/main.css">
 	<link href="style/profilestyle.css" rel="stylesheet" type="text/css">
 	<script defer src="js/cookie-handler.js"></script>
 	<script defer src="js/cookie-editor.js"></script>
+	<script defer src="js/main.js"></script>
 	<script defer src="js/sidebar.js"></script>
 	<script defer src="js/yourprofile.js"></script>
-	<style>
-	</style>
 </head>
 
 <body style="background-color: #B9E2FA">
+
+	<div class="tooltipparentbottombar">
+    <div class="tooltip" id="yourprofiletooltip">
+      <p>This is your profile. By clicking on your profile picture, you can see your profile information.</p>
+      <button type="button" class="actionButton" onclick="transitionTooltip('yourprofiletooltip', 'yourprofiletooltip2')">
+        Next
+      </button>
+      </a>
+    </div>
+    <div class="tooltip" id="yourprofiletooltip2">
+      <p>Soon you'll be able to make posts, but your account has to be verified first.</p>
+      <button type="button" class="actionButton" onclick="transitionTooltip('yourprofiletooltip2', 'yourprofiletooltip3')">
+        Next
+      </button>
+      </a>
+    </div>
+    <div class="tooltip" id="yourprofiletooltip3">
+      <p>While you're waiting to be verified, why not check out one of YooHoo's other features, the YooClick Game?</p>
+      <button type="button" class="actionButton" onclick="progressAndCloseTooltip('yourprofiletooltip3', 'goingtogame'); window.location.href = 'Clicker/clicker.html';">
+        Go to YooClick
+      </button>
+      <button type="button" class="actionButton" onclick="progressAndCloseTooltip('yourprofiletooltip3', 'goingtogame'); window.location.href = 'Clicker/clicker.html';">
+       Proceed forward towards YooClick
+      </button>
+      </a>
+    </div>
+  </div>
 	<!--Top banner:-->
 	<div class="topBannerBack">
 		<div class="topBannerFrontLeft">

@@ -48,7 +48,7 @@ color: white;
 
 		#bio{
 			width: 245px;
-			height: auto;
+			height: 730px;
 			position: relative;
 			left: 15px;
 			top: 20px;
@@ -227,13 +227,13 @@ color: white;
 			margin-left: auto;
 			margin-right: auto;
 		}
-		
+
 		#source {
 			font-size: 12px;
 			text-align: left;
 			color: grey;
 		}
-		
+
 		#linkedArticle {
 			background: lightgrey;
 			max-width: 600px;
@@ -245,7 +245,7 @@ color: white;
 			padding: 5px;
 			border-radius: 2px;
 		}
-		
+
 		#articleImage {
 			display: block;
 			width: 100%;
