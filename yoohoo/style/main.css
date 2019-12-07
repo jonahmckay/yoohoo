@@ -43,6 +43,12 @@ body
 	height:50px;
 	border: none;
 	background-color: #aaa;
+	cursor:pointer;
+	transition: 0.2s;
+}
+
+.actionButton:hover {
+	background-color: lightgrey;
 }
 
 .actionButtonOrange
@@ -55,6 +61,12 @@ body
 	height:50px;
 	border: none;
 	background-color: #EF851F;
+	cursor:pointer;
+	transition: 0.2s;
+}
+
+.actionButtonOrange:hover {
+	background-color: rgb(237, 163, 90);
 }
 
 .ruleDivider
