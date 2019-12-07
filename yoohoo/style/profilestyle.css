@@ -5,8 +5,10 @@
 	}
 
 		.topBannerBack {
+	position: fixed;
   background-image: url("../images/topBannerStretchProfile.png");
   width: 100%;
+  z-index: 2;
   height: 109px;
   display: inline-block;
   margin-bottom: -20px;
@@ -14,9 +16,10 @@
 }
 
 .topBannerFrontLeft {
+	position: fixed;
   width: 433px;
   height: 109px;
-  z-index: -1;
+  z-index: 2;
   display: inline-block;
   float: left;
 }
@@ -89,7 +92,11 @@ color: white;
 		}
 
 		.yourPost {
-			padding: 40px;
+			display: flex;
+			width: 90%;
+			margin: 10px;
+			padding: 10px;
+			border: solid, black;
 		}
 
 		.post {
@@ -102,6 +109,7 @@ color: white;
 		}
 
 		#post{
+
 		  margin: 10px;
 		  padding: 10px;
 		  border: solid, black;
@@ -163,7 +171,7 @@ color: white;
 		  height: 100%;
 		  width: 0;
 		  position: fixed;
-		  z-index: 1;
+		  z-index: 5;
 		  top: 0;
 		  left: 0;
 		  background-color: orange;
@@ -200,18 +208,19 @@ color: white;
 		  .sidenav a {font-size: 18px;}
 		}
 
-				#pleaseLogin {
+		#pleaseLogin {
 			background-color: grey;
 			position: absolute;
 			top: 310px;
 			left: 50%;
-			margin-left: -173px;
+			margin-left: -225px;
 			font-weight: bold;
 			color: black;
 			font-size: 16px;
 			padding: 16px 32px;
 			transition: 0.1s;
 			border-radius: 10px;
+			cursor: pointer;
 		}
 
 		#pleaseLogin:hover {
@@ -222,6 +231,7 @@ color: white;
 		#locationImage {
 			display: block;
 			width: 70%;
+			z-index: -2;
 			max-width: 500px;
 			max-height: 300px;
 			margin-left: auto;
