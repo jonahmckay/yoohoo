@@ -28,6 +28,5 @@ if (interests.length > 0)
   //remove comma and space
   interests = interests.slice(0, -2);
 }
-alert(interestData);
 document.getElementById('interests').innerHTML = interests;
 document.getElementById('yourFirstPost').innerHTML = Cookies.get("realname")+ ' gained 7 social points for creating an account on ' + Date();

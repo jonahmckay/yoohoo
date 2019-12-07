@@ -68,7 +68,6 @@ function register()
 			var inTravel = document.getElementById("interestTravel").checked ? "1" : "0";
 			var inNews = document.getElementById("interestNews").checked ? "1" : "0";
 			var interestString = inCook + inArt + inTech + inTravel + inNews;
-			alert(interestString);
 			var birthday = getDateOfBirth().toISOString().substring(0, 10);
 			makeNewAccount(document.getElementById('usernameInput').value, document.getElementById('nameInput').value, birthday, calculateAge(), interestString);
 			window.location.href = 'feed.html';
