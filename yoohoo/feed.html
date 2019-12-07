@@ -1,95 +1,6 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-  <title>Feed</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-  <link rel="stylesheet" href="style/main.css">
-  <link rel="stylesheet" href="style/feed.css">
-  <script defer src="js/cookie-handler.js"></script>
-  <script defer src="js/cookie-editor.js"></script>
-  <script defer src="js/main.js"></script>
-  <script defer src="js/feed.js"></script>
-  <style>
-  </style>
-</head>
-<body style ="100%">
-<div class="verticalBodyBox">
-<!--Top banner:-->
-  <div class="topBannerBack">
-  	<div class="topBannerFrontLeft">
-      <img src="images/topBannerFit.png" alt="YooHoo logo" width="603px" height="151px">
-    </div>
-    <div class= "menuItems"><a href="page.html">Legal privacy settings</a></div>
-    <div class= "menuItems"><a href="page.html">Game</a></div>
-    <div class= "menuItems"><a href="page.html">Your Profile</a></div>
-    <div class= "menuItems" style="background-color:#B2B2B2"><a href="feed.html">Feed</a></div>
-  </div>
-  <!--Instructions-->
-  <div class="tooltipparent">
-  <div class="tooltip" id="introductiontooltip">
-    <p>Welcome to YooHoo! This introductory tour is intended to give you an overview of all the website's features.</p>
-      <button type="button" class="actionButton" onclick="transitionTooltip('introductiontooltip', 'introductiontooltip2')">
-        Next
-      </button>
-    </a>
-  </div>
-  <div class="tooltip" id="introductiontooltip2">
-    <p>This is the Feed. Here, you can see what YooHooites are posting, and you can find new people to follow here.</p>
-      <button type="button" class="actionButton" onclick="transitionTooltip('introductiontooltip2', 'introductiontooltip3')">
-        Next
-      </button>
-    </a>
-  </div>
-  <div class="tooltip" id="introductiontooltip3">
-    <p>Next, we'll take a look at your profile, and the various ways you can add information about yourself to tailor YooHoo to Yoo!</p>
-      <button type="button" class="actionButton" onclick="progressAndCloseTooltip('introductiontooltip3', 'goingtoprofile')">
-        Close
-      </button>
-	  <button type="button" class="actionButton" onclick="progressAndCloseTooltip('introductiontooltip3', 'goingtoprofile'); window.location.href = 'yourprofile.html';">
-        Go to My Profile
-      </button>
-    </a>
-  </div>
-  </div>
-  <!--Post 1:-->
-<div class="postBox">
-  <!--Top sentence-->
-  <center>
-    <div class="postTopSentence">Ludwig Braunstein gained 12 social points in the consumer category</div>
-    <div class="postRuleDivider"></div>
-  </center>
-  <!--User information (picture, name, social points & date)-->
-  <div class="postUserInformation">
-    <img src="images/LudwigBraunstein.jpg" alt="profile picture">
-    <p>Ludwig Braunstein | 142 s.p. (novice)<br>Yesterday at 12:48 pm</p>
-  </div>
-  <!--Actual post (text and/or picture)-->
-  <center>
-    <div class="post">
-      <p>Just bought new Adidas shoes for 82€ at LLOYD. Love it!</p>
-      <img src="images/adidasShoes.jpg" alt="post picture">
-    </div>
-  </center>
-  <!--Icons-->
-  <div class="postIcons">
-    <!--Share your info icon-->
-    <img src="images/shareYourDataIcon.png" alt="share your data icon" onclick="alert('Thank you for your interest in sharing some information with us, we will get there by the end of the guided tour.')">
-    <p>Share your<br>personal information</p>
-    <!--Share this info icon-->
-    <img src="images/shareIcon.png" alt="share this post" onclick="alert('Thanks to you, more people will see this user's information. Keep going if you want YooHoo to better understand your interests!')">
-    <p>Share this<br>information</p>
-    <!--Like icon-->
-    <img src="images/likeIcon.png" alt="like icon" onclick="alert('Thank you for your like. Keep going if you want YooHoo to better understand your interests!')">
-    <p>Like this<br>information</p>
-  </div>
-</div>
-</body>
-</html>
-=======
-<!DOCTYPE html>
-
-<html>
 
 <head>
   <title>Feed</title>
@@ -104,6 +15,32 @@
 </head>
 
 <body style="100%">
+  <div class="tooltipparent">
+    <div class="tooltip" id="introductiontooltip">
+      <p>Welcome to YooHoo! This introductory tour is intended to give you an overview of all the website's features.</p>
+      <button type="button" class="actionButton" onclick="transitionTooltip('introductiontooltip', 'introductiontooltip2')">
+        Next
+      </button>
+      </a>
+    </div>
+    <div class="tooltip" id="introductiontooltip2">
+      <p>This is the Feed. Here, you can see what YooHooites are posting, and you can find new people to follow here.</p>
+      <button type="button" class="actionButton" onclick="transitionTooltip('introductiontooltip2', 'introductiontooltip3')">
+        Next
+      </button>
+      </a>
+    </div>
+    <div class="tooltip" id="introductiontooltip3">
+      <p>Next, we'll take a look at your profile, and the various ways you can add information about yourself to tailor YooHoo to Yoo!</p>
+      <button type="button" class="actionButton" onclick="progressAndCloseTooltip('introductiontooltip3', 'goingtoprofile')">
+        Close
+      </button>
+      <button type="button" class="actionButton" onclick="progressAndCloseTooltip('introductiontooltip3', 'goingtoprofile'); window.location.href = 'yourprofile.html';">
+        Go to My Profile
+      </button>
+      </a>
+    </div>
+  </div>
   <div class="verticalBodyBox">
     <!--Top banner:-->
     <div class="topBannerBack">
@@ -116,32 +53,7 @@
       <div class="menuItems" style="background-color:#B2B2B2"><a href="feed.html">Feed</a></div>
     </div>
     <!--Instructions-->
-    <div class="tooltipparent">
-      <div class="tooltip" id="introductiontooltip">
-        <p>Welcome to YooHoo! This introductory tour is intended to give you an overview of all the website's features.</p>
-        <button type="button" class="actionButton" onclick="transitionTooltip('introductiontooltip', 'introductiontooltip2')">
-          Next
-        </button>
-        </a>
-      </div>
-      <div class="tooltip" id="introductiontooltip2">
-        <p>This is the Feed. Here, you can see what YooHooites are posting, and you can find new people to follow here.</p>
-        <button type="button" class="actionButton" onclick="transitionTooltip('introductiontooltip2', 'introductiontooltip3')">
-          Next
-        </button>
-        </a>
-      </div>
-      <div class="tooltip" id="introductiontooltip3">
-        <p>Next, we'll take a look at your profile, and the various ways you can add information about yourself to tailor YooHoo to Yoo!</p>
-        <button type="button" class="actionButton" onclick="progressAndCloseTooltip('introductiontooltip3', 'goingtoprofile')">
-          Close
-        </button>
-        <button type="button" class="actionButton" onclick="progressAndCloseTooltip('introductiontooltip3', 'goingtoprofile'); window.location.href = 'yourprofile.html';">
-          Go to My Profile
-        </button>
-        </a>
-      </div>
-    </div>
+
 
     <div class="feedBox">
       <!--Post 1:-->
@@ -213,4 +125,3 @@
 </body>
 
 </html>
->>>>>>> 77f407314feb8de5dfd50d676dc70c1d4a52a1d5
