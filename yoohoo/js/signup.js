@@ -47,7 +47,7 @@ function getDateOfBirth()
 
 function register()
 {
-	if (calculateAge() < 14)
+	if (calculateAge() < 13)
 	{
 		alert("You must be over 13 to use YooHoo! Ask your parents permission to lie about your age, or wait for YooHoo Kids: coming in 2024!");
 		return;
