@@ -78,7 +78,6 @@ body
 	z-index: 0;
 }
 
-
 .tooltip {
   visibility: hidden;
   width: 100%;
@@ -91,7 +90,10 @@ body
   position: absolute;
   z-index: 1;
   bottom:0;
-	font-family: Segoe UI, sans-serif;
+	font-family: Segoe UI, sans-serif !important;
+	font-weight: normal !important;
+	font-size: 12pt !important;
+
 
   margin-bottom:-5px;
   padding-bottom:20px;
