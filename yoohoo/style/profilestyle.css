@@ -48,7 +48,7 @@ color: white;
 
 		#bio{
 			width: 245px;
-			height: 730px;
+			height: auto;
 			position: relative;
 			left: 15px;
 			top: 20px;
@@ -58,6 +58,7 @@ color: white;
 			border-radius: 10px;
 			text-align: left;
 			padding: 3px;
+			margin-bottom: 75px;
 		}
 
 		#profilePic {
