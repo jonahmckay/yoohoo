@@ -91,6 +91,7 @@ body
   position: absolute;
   z-index: 1;
   bottom:0;
+	font-family: Segoe UI, sans-serif;
 
   margin-bottom:-5px;
   padding-bottom:20px;
