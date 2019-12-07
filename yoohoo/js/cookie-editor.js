@@ -18,10 +18,11 @@ function getProgressValue()
 }
 
 
-function makeNewAccount(username, realname, age, interests)
+function makeNewAccount(username, realname, birthday, age, interests)
 {
 	Cookies.set("username", username, {expires: expiryTime});
 	Cookies.set("realname", realname, {expires: expiryTime});
+	Cookies.set("birthday", birthday, {expires: expiryTime});
 	Cookies.set("age", age, {expires: expiryTime});
 	Cookies.set("interests", interests, {expires: expiryTime});
 	setProgress("welcome");
