@@ -1,9 +1,9 @@
 			body {
-		background-color: #B9E2FA; 
+		background-color: #B9E2FA;
 		padding: 0;
 		margin: 0;
 	}
-	
+
 		.topBannerBack {
   background-image: url("../images/topBannerStretchProfile.png");
   width: 100%;
@@ -12,7 +12,7 @@
   margin-bottom: -20px;
   vertical-align: middle;
 }
-	
+
 .topBannerFrontLeft {
   width: 433px;
   height: 109px;
@@ -45,7 +45,7 @@ color: white;
 color: white;
 }
 
-		
+
 		#bio{
 			width: 245px;
 			height: 730px;
@@ -58,36 +58,39 @@ color: white;
 			border-radius: 10px;
 			text-align: left;
 			padding: 3px;
-		}	
-		
+		}
+
 		#profilePic {
 			width: 90%;
 		}
-		
+
 		p{
-		margin-bottom: 2px;	
+		margin-bottom: 2px;
 		margin-top: 4px;
 		margin-left: 5px;
 		font-weight: bold;
-		font-family: "Verdana";
+		font-family: "Segoe UI", sans-serif;
 		}
-		
+
 		li{
-		font-family: "verdana";
+		font-family: "Segoe UI", sans-serif;
 		margin-left: 5px;
 		}
-		
+
 		#profilename{
 			font-size: 25px;
-			font-family: "Verdana";
+			font-family: "Segoe UI", sans-serif;
 			color: white;
 			position: relative;
 			text-align: center;
 			top: -15px;
 			margin-bottom: 0px;
 		}
-			
-		
+
+		.yourPost {
+			padding: 40px;
+		}
+
 		.post {
 			flex: 10px;
 			max-height: 400px;
@@ -96,17 +99,17 @@ color: white;
 		.lastpost {
 			flex:1 1 200px;
 		}
-		
+
 		#post{
 		  margin: 10px;
 		  padding: 10px;
 		  border: solid, black;
 		}
-		
+
 		#postHeader{
 			margin-left: 10px;
 		}
-		
+
 		#imageBacker {
 			background-color: grey;
 			width: 60%;
@@ -114,14 +117,14 @@ color: white;
 			margin-left: auto;
 			margin-right: auto;
 		}
-		
+
 		#imagePost {
 			display: block;
 			width: 80%;
 			margin-left: auto;
 			margin-right: auto;
 		}
-		
+
 		.feed{
 		    display: flex;
 			flex-direction: column;
@@ -144,9 +147,9 @@ color: white;
 		  border-radius: 5px;
 		}
 
-				
+
 		body {
-		  font-family: "Lato", sans-serif;
+		  font-family: "Segoe UI", sans-serif;
 		  display: flex;
 		  flex-direction: column;
 		  min-height: 98vh;
@@ -192,7 +195,7 @@ color: white;
 		  .sidenav {padding-top: 15px;}
 		  .sidenav a {font-size: 18px;}
 		}
-		
+
 				#pleaseLogin {
 			background-color: grey;
 			position: absolute;
@@ -206,12 +209,12 @@ color: white;
 			transition: 0.1s;
 			border-radius: 10px;
 		}
-		
+
 		#pleaseLogin:hover {
 			color: white;
 			transition: 0.1s;
 		}
-		
+
 				#locationImage {
 			display: block;
 			width: 70%;

@@ -1,41 +1,54 @@
 <!doctype html>
 <html>
-<head>
 
+<head>
+	<title>Your profile</title>
 	<link href="style/profilestyle.css" rel="stylesheet" type="text/css">
 	<script defer src="js/cookie-handler.js"></script>
 	<script defer src="js/cookie-editor.js"></script>
-	<script src="js/sidebar.js"></script>
-	<script src="js/yourprofile.js"></script>
-
+	<script defer src="js/sidebar.js"></script>
+	<script defer src="js/yourprofile.js"></script>
+	<style>
+		.blur {-webkit-filter: blur(4px);filter: blur(4px);}
+	</style>
 </head>
 
-	<body style="background-color: #B9E2FA">
+<body style="background-color: #B9E2FA">
+	<!--Top banner:-->
+	<div class="topBannerBack">
+		<div class="topBannerFrontLeft">
+			<img src="images/topBannerFitProfile.png" alt="YooHoo logo">
+		</div>
+		<div class="menuItems"><a href="PrivacyPolicy/privacypolicy.html">Legal privacy settings</a></div>
+		<div class="menuItems"><a href="Clicker/clicker.html">Game</a></div>
+		<div class="menuItems" style="background-color:#B2B2B2"><a href="yourprofile.html">Your Profile</a></div>
+		<div class="menuItems"><a href="feed/feed.html">Feed</a></div>
+	</div>
 
 	<div id="mySidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<p id="profilename">Unknown Name</p>
-		<img src="Tallulah.png" alt="Tallulah">
-	</div>
-	
-	
-	<span style="font-size:30px;cursor:pointer" onclick="openNav()"><img 
-	style="cursor:pointer; width:55px; height:55px; vertical-align:sub" 
-	onclick="openNav()" src="Tallulah.png" alt="Tallulah"> Profile</span>
-	
-	
-	<div class="feed">
-		<p id="postHeader">Tallulah posted:</p>
-		<div id="post" class="post">post1</div>
-		<p id="postHeader">Tallulah posted:</p>
-		<div id="post" class="post">post2</div>
-		<p id="postHeader">Tallulah shared an image</p>
-		<div id="post" class="lastpost">
-		<div id="imageBacker">
-		<img id="imagePost" src="minionMeme.jpg" alt="minion">
+		<img id="profilePic" src="images/profilePicture.png" alt="profile picture">
+		<div id="bio">
+			<p>Social points:</p>
+			<li>07 sp (novice)</li>
+			<p>Birth</p>
+			<li>Birth</li>
+			<p>Age: </p>
+			<li id="age">age</li>
+			<p>Interests: </p>
+			<li id="interests">Interest</li>
 		</div>
-		</div>  
 	</div>
 
-	</body>
+
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()"><img style="cursor:pointer; width:55px; height:55px; vertical-align:sub" onclick="openNav()" src="images/profilePicture.png" alt="profile picture"> Your profile</span>
+
+	<div class="feed">
+		<p id="yourFirstPost" id="postHeader"></p>
+		<div class="yourPost">Welcome to YooHoo, where it's all about yoo!</div>
+	</div>
+
+</body>
+
 </html>
