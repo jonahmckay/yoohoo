@@ -30,7 +30,7 @@ body
 {
 	color: #EF851F;
 	border-bottom: #EF851F solid 1px;
-	cursor: default;
+	cursor:pointer;
 }
 
 .actionButton
