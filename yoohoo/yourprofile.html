@@ -25,17 +25,20 @@
     </div>
     <div class="tooltip" id="yourprofiletooltip2">
       <p>Soon you'll be able to make posts, but your account has to be verified first.</p>
-      <button type="button" class="actionButton" onclick="transitionTooltip('yourprofiletooltip2', 'yourprofiletooltip3')">
+			<!--Button with popup:-->
+			<button type="button" class="actionButton" value="Open Window" onclick="firstPopupButton()">
         Next
       </button>
       </a>
     </div>
     <div class="tooltip" id="yourprofiletooltip3">
       <p>While you're waiting to be verified, why not check out one of YooHoo's other features, the YooClick Game?</p>
-      <button type="button" class="actionButton" onclick="progressAndCloseTooltip('yourprofiletooltip3', 'goingtogame'); window.location.href = 'Clicker/clicker.html';">
+			<!--Button with popup:-->
+			<button type="button" class="actionButton" value="Open Window" onclick="secondPopupButton()">
         Go to YooClick
       </button>
-      <button type="button" class="actionButton" onclick="progressAndCloseTooltip('yourprofiletooltip3', 'goingtogame'); window.location.href = 'Clicker/clicker.html';">
+			<!--Button with (same) popup:-->
+      <button type="button" class="actionButton" value="Open Window" onclick="secondPopupButton()">
        Proceed forward towards YooClick
       </button>
       </a>
@@ -50,7 +53,7 @@
 		</div>
 		<div class="menuItems"><a href="PrivacyPolicy/privacypolicy.html">Privacy Policy</a></div>
 		<div class="menuItems"><a href="Clicker/clicker.html">Game</a></div>
-		<div class="menuItems" style="background-color:#B2B2B2; border-radius: 5px""><a href="yourprofile.html">Your Profile</a></div>
+		<div class="menuItems" style="background-color:#B2B2B2; border-radius: 5px"><a href="yourprofile.html">Your Profile</a></div>
 		<div class="menuItems"><a href="feed.html">Feed</a></div>
 	</div>
 
