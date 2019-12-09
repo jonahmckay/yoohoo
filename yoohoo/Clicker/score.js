@@ -79,15 +79,15 @@
 	}
 	
 	function openPopup() {
-		if(score >= 5 && popupCount < 1) {
+		if(score >= 60 && popupCount < 1) {
 		document.getElementById("pop1").style.visibility = 'visible';
 		popupCount ++;
 		}
-			if(score >= 10 && popupCount < 2) {
+			if(score >= 120 && popupCount < 2) {
 			document.getElementById("pop2").style.visibility = 'visible';
 			popupCount ++;
 			}
-				if(score >= 15 && popupCount < 3) {
+				if(score >= 300 && popupCount < 3) {
 				document.getElementById("pop3").style.visibility = 'visible';
 				popupCount ++;
 				}
