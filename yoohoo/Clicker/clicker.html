@@ -27,14 +27,16 @@
 	      <button type="button" class="actionButton" onclick="transitionTooltip('gametooltip2', 'gametooltip3')">
 	        I certainly don't!
 	      </button>
-				<button type="button" class="actionButton" onclick="transitionTooltip('gametooltip2', 'gametooltip3')">
+				<!--Button with popup:-->
+				<button type="button" class="actionButton" value="Open Window" onclick="popupButton()">
 	        That sounds important?
 	      </button>
 	      </a>
 	    </div>
 	    <div class="tooltip" id="gametooltip3">
 	      <p>Of course you don't want to see the privacy policy! That concludes this tour. You can go back to the feed and explore other people's profiles. Welcome to YooHoo, and remember, Information Sharing is Information Caring!™</p>
-	      <button type="button" class="actionButton" onclick="progressAndCloseTooltip('gametooltip3', 'finishedgame');">
+				<!--Button with popup:-->
+				<button type="button" class="actionButton" value="Open Window" onclick="lastPopupButton()">
 	        Finish Tour
 	      </button>
 	      </a>
@@ -58,30 +60,14 @@
 
 	<div class=all>
 		<br>
-
 		<p id="myStatus">Noob</p>
-
 		<button onclick=updateScore() class="clickMe">CLICK ME</button>
-
-
 		<br>
-
-
 		<p id="scoreVal">Score: 0 points</p>
-
-
 		<p id="multi">Multiplier: x1</p>
-
-
 		<button class="button" onclick=upgrade() id="upgrade">Upgrade 20</button>
-
-
-
 		<button class="button" onclick=buyAutoclick() id="auto">Autoclick 100</button>
-
 	</div>
-
-
 
 	<div style="visibility: hidden;" class="popup" id="pop1">
 		<p> STOP </p>
@@ -94,7 +80,6 @@
 		</form>
 		<button type="button" id="enterInfo" onclick=closePopup()>Enter</button>
 	</div>
-
 
 	<div style="visibility: hidden;" class="popup" id="pop2">
 		<p> STOP </p>
@@ -110,7 +95,6 @@
 		</form>
 		<button type="button" id="enterInfo" onclick=closePopup()>Enter</button>
 	</div>
-
 
 	<div style="visibility: hidden;" class="popup" id="pop3">
 		<p> STOP </p>
