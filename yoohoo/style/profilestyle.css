@@ -4,7 +4,7 @@
 		margin: 0;
 	}
 
-		.topBannerBack {
+.topBannerBack {
 	position: fixed;
   background-image: url("../images/topBannerStretchProfile.png");
   width: 100%;
@@ -48,7 +48,6 @@ color: white;
 color: white;
 }
 
-
 		#bio{
 			width: 245px;
 			height: 730px;
@@ -91,17 +90,18 @@ color: white;
 			margin-bottom: 0px;
 		}
 
-		.yourPost {
-			display: flex;
-			width: 90%;
-			margin: 10px;
-			padding: 10px;
-			border: solid, black;
+		.yourPostHeader{
+			margin-left: 10px;
+			font-size: 20px;
+			font-weight: bold;
+			text-align: left;
 		}
 
 		.post {
 			flex: 10px;
-			max-height: 400px;
+			width:60%
+			margin-left: auto;
+			margin-right: auto;
 		}
 
 		.lastpost {
@@ -117,6 +117,8 @@ color: white;
 
 		#postHeader{
 			margin-left: 10px;
+			font-size: 20px;
+			font-weight: bold;
 		}
 
 		#imageBacker {
@@ -136,24 +138,23 @@ color: white;
 		}
 
 		.feed{
-		    display: flex;
-			width: 97%;
+			width: 70%;
 			flex-direction: column;
 			flex: 1;
 			display: flex;
-			flex-direction: column;
 			background-color: rgb(242, 212, 143);
 			border-radius: 10px;
 			margin-top: 10px;
 			margin-left: auto;
 			margin-right: auto;
 			max-width: 900px;
+			padding: 50px 8%;
 		}
 
 		.feed > div {
-		  background-color: rgb(255, 246, 219);
+		  background-color: white;
 		  text-align: left;
-		  padding: 15px;
+		  padding: 20px 60px;
 		  font-size: 20px;
 		  box-shadow: 5px 5px 2px hsla(0, 0%, 0%, 0.2);
 		  border-radius: 5px;
@@ -164,7 +165,6 @@ color: white;
 		  font-family: "Segoe UI", sans-serif;
 		  display: flex;
 		  flex-direction: column;
-		  min-height: 98vh;
 		}
 
 		.sidenav {
@@ -261,4 +261,35 @@ color: white;
 			width: 100%;
 			margin-left: auto;
 			margin-right: auto;
+		}
+
+		.postIcons {
+		  display: block;
+		  box-sizing: border-box;
+		  padding-top: 15px;
+			width:550px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.postIcons img {
+		  width: 50px;
+		  height: 50px;
+			float: left;
+		}
+
+		.postIcons p {
+		  width: auto;
+		  margin-top: 5px;
+		  padding-left: 5px;
+		  padding-right: 15px;
+		  font-size: 15px;
+			float: left;
+		}
+
+		.iconsRuleDivider {
+			width:100%;
+			margin-top:10px;
+			margin-bottom:10px;
+			border-bottom: 1px solid gray;
 		}

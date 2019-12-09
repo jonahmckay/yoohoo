@@ -1,82 +1,131 @@
 <!doctype html>
 <html>
-<head>
-<link rel="icon" href="favicon.ico" type="image/x-icon"/>
-<link href="style/profilestyle.css" rel="stylesheet" type="text/css">
-<script src="js/sidebar.js"></script>
 
+<head>
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link href="style/profilestyle.css" rel="stylesheet" type="text/css">
+	<script src="js/sidebar.js"></script>
 </head>
 
-	<body style="background-color: #B9E2FA">
+<body style="background-color: #B9E2FA">
 
 	<!--Top banner:-->
-  <div class="topBannerBack">
-  	<div class="topBannerFrontLeft">
-	<a href="feed.html">
-	<img src="images/topBannerFitProfile.png" alt="YooHoo logo" >
-	</a>
-    </div>
-    <div class= "menuItems"><a href="PrivacyPolicy/privacypolicy.html">Privacy Policy</a></div>
-    <div class= "menuItems"><a href="Clicker/clicker.html">Game</a></div>
-    <div class= "menuItems"><a href="yourprofile.html">Your Profile</a></div>
-    <div class= "menuItems"><a href="feed.html">Feed</a></div>
-  </div>
+	<div class="topBannerBack">
+		<div class="topBannerFrontLeft">
+			<a href="feed.html">
+				<img src="images/topBannerFitProfile.png" alt="YooHoo logo">
+			</a>
+		</div>
+		<div class="menuItems"><a href="PrivacyPolicy/privacypolicy.html">Privacy Policy</a></div>
+		<div class="menuItems"><a href="Clicker/clicker.html">Game</a></div>
+		<div class="menuItems"><a href="yourprofile.html">Your Profile</a></div>
+		<div class="menuItems"><a href="feed.html">Feed</a></div>
+	</div>
 
+	<!--side bar-->
 	<div id="mySidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<p id="profilename">Cha Jin-Ae</p>
 		<img id="profilePic" src="images/ChaJinAe.png" alt="profilepicture">
-
 		<div id="bio">
-		<p>Social points:</p>
-		<li>302 209 855 sp (master)</li>
-		<p>Gender: </p>
-		<li>Female</li>
-		<p>Birth: </p>
-		<li>October 27, 1982 </li>
-		<p>Age: </p>
-		<li>37 years old</li>
-		<p>Email: </p>
-		<li>chajinae@email.com</li>
-		<p>Phone number:</p>
-		<li>02-2411-9994</li>
-		<p>Address: </p>
-		<li>  0910 개포로, 양평군, 599-978, 0910 개포로, 양평군</li>
-		<p>Religion: </p>
-		<li>Buddhism</li>
-		<p>Physical properties:</p>
-		<p>Height</p>
-		<li>152 cm</li>
-		<p>Weight</p>
-		<li>48.5 kg</li>
-		<p>Employment information:
-		<p>Company: </p>
-		<li>(주)혁상모바일</li>
-		<p>Title: </p>
-		<li>Dicta</li>
-		<p>Annual salary: </p>
-		<li> 37,810,000 ₩</li>
-	</div>
+			<p>Social points:</p>
+			<li>302 209 855 sp (master)</li>
+			<p>Gender: </p>
+			<li>Female</li>
+			<p>Birth: </p>
+			<li>October 27, 1982 </li>
+			<p>Age: </p>
+			<li>37 years old</li>
+			<p>Email: </p>
+			<li>chajinae@email.com</li>
+			<p>Phone number:</p>
+			<li>02-2411-9994</li>
+			<p>Address: </p>
+			<li> 0910 개포로, 양평군, 599-978, 0910 개포로, 양평군</li>
+			<p>Religion: </p>
+			<li>Buddhism</li>
+			<p>Physical properties:</p>
+			<p>Height</p>
+			<li>152 cm</li>
+			<p>Weight</p>
+			<li>48.5 kg</li>
+			<p>Employment information:</p>
+			<p>Company: </p>
+			<li>(주)혁상모바일</li>
+			<p>Title: </p>
+			<li>Dicta</li>
+			<p>Annual salary: </p>
+			<li> 37,810,000 ₩</li>
+		</div>
 	</div>
 
-	<span style="font-size:30px;cursor:pointer; margin-top: 90px" onclick="openNav()"><img
-	style="cursor:pointer; width:55px; height:55px; vertical-align:sub; margin-left:10px"
-	onclick="openNav()" src="images/ChaJinAe.png" alt="Name"> Profile</span>
-
+	<span style="font-size:30px;cursor:pointer; margin-top: 90px" onclick="openNav()"><img style="cursor:pointer; width:55px; height:55px; vertical-align:sub; margin-left:10px" onclick="openNav()" src="images/ChaJinAe.png" alt="Name"> Profile</span>
 
 	<div class="feed">
+		<!--post #1:-->
 		<p id="postHeader">Cha posted:</p>
-		<div id="post" class="post">Just created the profile, very exciting!!</div>
+		<div id="post" class="post">
+			Just created the profile, very exciting!!
+			<p class="iconsRuleDivider"></p>
+			<!--Icons-->
+			<div class="postIcons">
+				<!--Share your info icon-->
+				<img src="images/shareYourDataIcon.png" alt="share your data icon" onclick="alert('Thank you for your interest in sharing some information with us, we will get there by the end of the guided tour.')">
+				<p>Share your<br>personal information</p>
+				<!--Share this info icon-->
+				<img src="images/shareIcon.png" alt="share this post" onclick="alert('Thanks to you, more people will see this user's information. Keep going if you want YooHoo to better understand your interests!')">
+				<p>Share this<br>information</p>
+				<!--Like icon-->
+				<img src="images/likeIcon.png" alt="like icon" onclick="alert('Thank you for your like. Keep going if you want YooHoo to better understand your interests!')">
+				<p>Like this<br>information</p>
+			</div>
+		</div>
+
+		<br>
+
+		<!--post #2:-->
 		<p id="postHeader">Cha posted:</p>
-		<div id="post" class="post">Happy Birthday to my friend <a href="Tallulah.html">@Tallulah Suarez</a> !!!</div>
+		<div id="post" class="post">
+			Happy Birthday to my friend <a href="Tallulah.html">@Tallulah Suarez</a> !!!
+			<p class="iconsRuleDivider"></p>
+			<!--Icons-->
+			<div class="postIcons">
+				<!--Share your info icon-->
+				<img src="images/shareYourDataIcon.png" alt="share your data icon" onclick="alert('Thank you for your interest in sharing some information with us, we will get there by the end of the guided tour.')">
+				<p>Share your<br>personal information</p>
+				<!--Share this info icon-->
+				<img src="images/shareIcon.png" alt="share this post" onclick="alert('Thanks to you, more people will see this user's information. Keep going if you want YooHoo to better understand your interests!')">
+				<p>Share this<br>information</p>
+				<!--Like icon-->
+				<img src="images/likeIcon.png" alt="like icon" onclick="alert('Thank you for your like. Keep going if you want YooHoo to better understand your interests!')">
+				<p>Like this<br>information</p>
+			</div>
+		</div>
+
+		<br>
+
+		<!--post #3:-->
 		<p id="postHeader">Cha's last shared image</p>
 		<div id="post" class="lastpost">
-		<p>Love, love, LOVE the beach!</p>
-		<div id="imageBacker">
-		<img id="imagePost" src="images/beach.jpg" alt="imagepost">
-		</div>
+			<p>Love, love, LOVE the beach!</p>
+			<div id="imageBacker">
+				<img id="imagePost" src="images/beach.jpg" alt="imagepost">
+			</div>
+			<p class="iconsRuleDivider"></p>
+			<!--Icons-->
+			<div class="postIcons">
+				<!--Share your info icon-->
+				<img src="images/shareYourDataIcon.png" alt="share your data icon" onclick="alert('Thank you for your interest in sharing some information with us, we will get there by the end of the guided tour.')">
+				<p>Share your<br>personal information</p>
+				<!--Share this info icon-->
+				<img src="images/shareIcon.png" alt="share this post" onclick="alert('Thanks to you, more people will see this user's information. Keep going if you want YooHoo to better understand your interests!')">
+				<p>Share this<br>information</p>
+				<!--Like icon-->
+				<img src="images/likeIcon.png" alt="like icon" onclick="alert('Thank you for your like. Keep going if you want YooHoo to better understand your interests!')">
+				<p>Like this<br>information</p>
+			</div>
 		</div>
 	</div>
+</body>
 
-	</body>
 </html>

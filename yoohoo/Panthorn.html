@@ -1,83 +1,133 @@
 <!doctype html>
 <html>
-<head>
-<link rel="icon" href="favicon.ico" type="image/x-icon"/>
-<link href="style/profilestyle.css" rel="stylesheet" type="text/css">
-<script src="js/sidebar.js"></script>
 
+<head>
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link href="style/profilestyle.css" rel="stylesheet" type="text/css">
+	<script src="js/sidebar.js"></script>
 </head>
 
-	<body style="background-color: #B9E2FA">
+<body style="background-color: #B9E2FA">
 
 	<!--Top banner:-->
-  <div class="topBannerBack">
-  	<div class="topBannerFrontLeft">
-		<a href="feed.html">
-	<img src="images/topBannerFitProfile.png" alt="YooHoo logo" >
-	</a>
-    </div>
-    <div class= "menuItems"><a href="PrivacyPolicy/privacypolicy.html">Privacy Policy</a></div>
-    <div class= "menuItems"><a href="Clicker/clicker.html">Game</a></div>
-    <div class= "menuItems"><a href="yourprofile.html">Your Profile</a></div>
-    <div class= "menuItems"><a href="feed.html">Feed</a></div>
-  </div>
+	<div class="topBannerBack">
+		<div class="topBannerFrontLeft">
+			<a href="feed.html">
+				<img src="images/topBannerFitProfile.png" alt="YooHoo logo">
+			</a>
+		</div>
+		<div class="menuItems"><a href="PrivacyPolicy/privacypolicy.html">Privacy Policy</a></div>
+		<div class="menuItems"><a href="Clicker/clicker.html">Game</a></div>
+		<div class="menuItems"><a href="yourprofile.html">Your Profile</a></div>
+		<div class="menuItems"><a href="feed.html">Feed</a></div>
+	</div>
 
+	<!--side bar-->
 	<div id="mySidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<p id="profilename">Panthorn Suttirat</p>
 		<img id="profilePic" src="images/PanthornSuttirat.png" alt="Name">
-				<div id="bio">
-		<p>Social points:</p>
-		<li>4087 (novice)</li>
-		<p>Gender: </p>
-		<li>Male</li>
-		<p>Birth: </p>
-		<li>February 27, 1987 </li>
-		<p>Age: </p>
-		<li>32 years old</li>
-		<p>Email: </p>
-		<li>panthornsuttirat @email.com</li>
-		<p>Phone number:</p>
-		<li>+886949412644</li>
-		<p>Address: </p>
-		<li>087-46 金門縣金沙鎮站前街鐵路南舍街一段749巷429弄440號38樓</li>
-		<p>Religion: </p>
-		<li>Taoism</li>
-		<p>Physical properties:</p>
-		<p>Height</p>
-		<li>5' 2" (165cm)</li>
-		<p>Weight</p>
-		<li>64 kg</li>
-		<p>Employment information:
-		<p>Company: </p>
-		<li>新亞洲汽車有限公司</li>
-		<p>Title: </p>
-		<li>Commodi</li>
-		<p>Annual salary: </p>
-		<li>49 989 NT$</li>
-	</div>
+		<div id="bio">
+			<p>Social points:</p>
+			<li>4087 (novice)</li>
+			<p>Gender: </p>
+			<li>Male</li>
+			<p>Birth: </p>
+			<li>February 27, 1987 </li>
+			<p>Age: </p>
+			<li>32 years old</li>
+			<p>Email: </p>
+			<li>panthornsuttirat @email.com</li>
+			<p>Phone number:</p>
+			<li>+886949412644</li>
+			<p>Address: </p>
+			<li>087-46 金門縣金沙鎮站前街鐵路南舍街一段749巷429弄440號38樓</li>
+			<p>Religion: </p>
+			<li>Taoism</li>
+			<p>Physical properties:</p>
+			<p>Height</p>
+			<li>5' 2" (165cm)</li>
+			<p>Weight</p>
+			<li>64 kg</li>
+			<p>Employment information:</p>
+			<p>Company: </p>
+			<li>新亞洲汽車有限公司</li>
+			<p>Title: </p>
+			<li>Commodi</li>
+			<p>Annual salary: </p>
+			<li>49 989 NT$</li>
+		</div>
 	</div>
 
-	<span style="font-size:30px;cursor:pointer; margin-top: 90px" onclick="openNav()"><img
-	style="cursor:pointer; width:55px; height:55px; vertical-align:sub; margin-left: 10px"
-	onclick="openNav()" src="images/PanthornSuttirat.png" alt="Name"> Profile</span>
-
+	<span style="font-size:30px;cursor:pointer; margin-top: 90px" onclick="openNav()"><img style="cursor:pointer; width:55px; height:55px; vertical-align:sub; margin-left: 10px" onclick="openNav()" src="images/PanthornSuttirat.png"
+			alt="Name">Profile</span>
 
 	<div class="feed">
+		<!--post #1:-->
 		<p id="postHeader">Panthorn posted:</p>
 		<div id="post" class="post">
-我剛剛在我的工作場所獲得了工作晉昇機會。我現在可以減少工作，賺更多的錢來為家人在家購買食物。</div>
+			我剛剛在我的工作場所獲得了工作晉昇機會。我現在可以減少工作，賺更多的錢來為家人在家購買食物。
+			<p class="iconsRuleDivider"></p>
+			<!--Icons-->
+			<div class="postIcons">
+				<!--Share your info icon-->
+				<img src="images/shareYourDataIcon.png" alt="share your data icon" onclick="alert('Thank you for your interest in sharing some information with us, we will get there by the end of the guided tour.')">
+				<p>Share your<br>personal information</p>
+				<!--Share this info icon-->
+				<img src="images/shareIcon.png" alt="share this post" onclick="alert('Thanks to you, more people will see this user's information. Keep going if you want YooHoo to better understand your interests!')">
+				<p>Share this<br>information</p>
+				<!--Like icon-->
+				<img src="images/likeIcon.png" alt="like icon" onclick="alert('Thank you for your like. Keep going if you want YooHoo to better understand your interests!')">
+				<p>Like this<br>information</p>
+			</div>
+		</div>
+
+		<br>
+
+		<!--post #2:-->
 		<p id="postHeader">Panthorn posted:</p>
 		<div id="post" class="post">
-許多人花太多時間在工作上以養家糊口。我寧願減少工作量，花時間陪伴家人並留下新的回憶。我愛我的妻子和孩子。我們將很快去美國度假並參觀迪士尼樂園。</div>
+			許多人花太多時間在工作上以養家糊口。我寧願減少工作量，花時間陪伴家人並留下新的回憶。我愛我的妻子和孩子。我們將很快去美國度假並參觀迪士尼樂園。
+			<p class="iconsRuleDivider"></p>
+			<!--Icons-->
+			<div class="postIcons">
+				<!--Share your info icon-->
+				<img src="images/shareYourDataIcon.png" alt="share your data icon" onclick="alert('Thank you for your interest in sharing some information with us, we will get there by the end of the guided tour.')">
+				<p>Share your<br>personal information</p>
+				<!--Share this info icon-->
+				<img src="images/shareIcon.png" alt="share this post" onclick="alert('Thanks to you, more people will see this user's information. Keep going if you want YooHoo to better understand your interests!')">
+				<p>Share this<br>information</p>
+				<!--Like icon-->
+				<img src="images/likeIcon.png" alt="like icon" onclick="alert('Thank you for your like. Keep going if you want YooHoo to better understand your interests!')">
+				<p>Like this<br>information</p>
+			</div>
+		</div>
+
+		<br>
+
+		<!--post #3:-->
 		<p id="postHeader">Panthorn shared an image</p>
 		<div id="post" class="lastpost">
-		<p style="font-weight: normal; margin-bottom: 10px">我要去迪斯尼乐园</p>
-		<div id="imageBacker">
-		<img id="imagePost" src="images/disneyland.jpg" alt="minion">
-		</div>
+			<p style="font-weight: normal; margin-bottom: 10px">我要去迪斯尼乐园</p>
+			<div id="imageBacker">
+				<img id="imagePost" src="images/disneyland.jpg" alt="minion">
+			</div>
+			<p class="iconsRuleDivider"></p>
+			<!--Icons-->
+			<div class="postIcons">
+				<!--Share your info icon-->
+				<img src="images/shareYourDataIcon.png" alt="share your data icon" onclick="alert('Thank you for your interest in sharing some information with us, we will get there by the end of the guided tour.')">
+				<p>Share your<br>personal information</p>
+				<!--Share this info icon-->
+				<img src="images/shareIcon.png" alt="share this post" onclick="alert('Thanks to you, more people will see this user's information. Keep going if you want YooHoo to better understand your interests!')">
+				<p>Share this<br>information</p>
+				<!--Like icon-->
+				<img src="images/likeIcon.png" alt="like icon" onclick="alert('Thank you for your like. Keep going if you want YooHoo to better understand your interests!')">
+				<p>Like this<br>information</p>
+			</div>
 		</div>
 	</div>
 
-	</body>
+</body>
+
 </html>

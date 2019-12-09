@@ -3,7 +3,7 @@
 
 <head>
 	<title>Your profile</title>
-	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="style/main.css">
 	<link href="style/profilestyle.css" rel="stylesheet" type="text/css">
 	<script defer src="js/cookie-handler.js"></script>
@@ -16,40 +16,41 @@
 <body style="background-color: #B9E2FA">
 
 	<div class="tooltipparentbottombar">
-    <div class="tooltip" id="yourprofiletooltip">
-      <p>This is your profile. By clicking on your profile picture, you can see your profile information.</p>
-      <button type="button" class="actionButton" onclick="transitionTooltip('yourprofiletooltip', 'yourprofiletooltip2')">
-        Next
-      </button>
-      </a>
-    </div>
-    <div class="tooltip" id="yourprofiletooltip2">
-      <p>Soon you'll be able to make posts, but your account has to be verified first.</p>
+		<div class="tooltip" id="yourprofiletooltip">
+			<p>This is your profile. By clicking on your profile picture, you can see your profile information.</p>
+			<button type="button" class="actionButton" onclick="transitionTooltip('yourprofiletooltip', 'yourprofiletooltip2')">
+				Next
+			</button>
+			</a>
+		</div>
+		<div class="tooltip" id="yourprofiletooltip2">
+			<p>Soon you'll be able to make posts, but your account has to be verified first.</p>
 			<!--Button with popup:-->
 			<button type="button" class="actionButton" value="Open Window" onclick="firstPopupButton()">
-        Next
-      </button>
-      </a>
-    </div>
-    <div class="tooltip" id="yourprofiletooltip3">
-      <p>While you're waiting to be verified, why not check out one of YooHoo's other features, the YooClick Game?</p>
+				Next
+			</button>
+			</a>
+		</div>
+		<div class="tooltip" id="yourprofiletooltip3">
+			<p>While you're waiting to be verified, why not check out one of YooHoo's other features, the YooClick Game?</p>
 			<!--Button with popup:-->
 			<button type="button" class="actionButton" value="Open Window" onclick="secondPopupButton()">
-        Go to YooClick
-      </button>
+				Go to YooClick
+			</button>
 			<!--Button with (same) popup:-->
-      <button type="button" class="actionButton" value="Open Window" onclick="secondPopupButton()">
-       Proceed forward towards YooClick
-      </button>
-      </a>
-    </div>
-  </div>
+			<button type="button" class="actionButton" value="Open Window" onclick="secondPopupButton()">
+				Proceed forward towards YooClick
+			</button>
+			</a>
+		</div>
+	</div>
+
 	<!--Top banner:-->
 	<div class="topBannerBack">
 		<div class="topBannerFrontLeft">
 			<a href="feed.html">
-	<img src="images/topBannerFitProfile.png" alt="YooHoo logo" >
-	</a>
+				<img src="images/topBannerFitProfile.png" alt="YooHoo logo">
+			</a>
 		</div>
 		<div class="menuItems"><a href="PrivacyPolicy/privacypolicy.html">Privacy Policy</a></div>
 		<div class="menuItems"><a href="Clicker/clicker.html">Game</a></div>
@@ -57,6 +58,7 @@
 		<div class="menuItems"><a href="feed.html">Feed</a></div>
 	</div>
 
+	<!--side bar-->
 	<div id="mySidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<p id="profilename">Unknown Name</p>
@@ -73,12 +75,28 @@
 		</div>
 	</div>
 
+	<span style="font-size:30px;cursor:pointer; margin-top: 90px" onclick="openNav()"><img style="cursor:pointer; width:55px; height:55px; vertical-align:sub" onclick="openNav()" src="images/profilePicture.png" alt="profile picture"> Your
+		profile</span>
 
-	<span style="font-size:30px;cursor:pointer; margin-top: 90px" onclick="openNav()"><img style="cursor:pointer; width:55px; height:55px; vertical-align:sub" onclick="openNav()" src="images/profilePicture.png" alt="profile picture"> Your profile</span>
-
-	<div class="feed verticalBodyBox">
-		<p id="yourFirstPost" id="postHeader"></p>
-		<div class="yourPost">Welcome to YooHoo, where it's all about yoo!</div>
+	<div class="feed">
+		<!--post #1:-->
+		<p id="yourFirstPost" class="yourPostHeader"></p>
+		<div id="post" class="post">
+			Welcome to YooHoo, where it's all about yoo!
+			<p class="iconsRuleDivider"></p>
+			<!--Icons-->
+			<div class="postIcons">
+				<!--Share your info icon-->
+				<img src="images/shareYourDataIcon.png" alt="share your data icon" onclick="alert('Thank you for your interest in sharing some information with us, we will get there by the end of the guided tour.')">
+				<p>Share your<br>personal information</p>
+				<!--Share this info icon-->
+				<img src="images/shareIcon.png" alt="share this post" onclick="alert('Thanks to you, more people will see this user's information. Keep going if you want YooHoo to better understand your interests!')">
+				<p>Share this<br>information</p>
+				<!--Like icon-->
+				<img src="images/likeIcon.png" alt="like icon" onclick="alert('Thank you for your like. Keep going if you want YooHoo to better understand your interests!')">
+				<p>Like this<br>information</p>
+			</div>
+		</div>
 	</div>
 
 </body>

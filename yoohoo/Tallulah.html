@@ -1,94 +1,141 @@
 <!doctype html>
 <html>
-<head>
-<link rel="icon" href="favicon.ico" type="image/x-icon"/>
-<link href="style/profilestyle.css" rel="stylesheet" type="text/css">
-<script src="js/sidebar.js"></script>
-<style>
-.blur {-webkit-filter: blur(4px);filter: blur(4px);}
-</style>
 
+<head>
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link href="style/profilestyle.css" rel="stylesheet" type="text/css">
+	<script src="js/sidebar.js"></script>
+	<style>
+		.blur {
+			-webkit-filter: blur(4px);
+			filter: blur(4px);
+		}
+	</style>
 </head>
 
-	<body style="background-color: #B9E2FA">
+<body style="background-color: #B9E2FA">
 
-		<!--Top banner:-->
-  <div class="topBannerBack">
-  	<div class="topBannerFrontLeft">
-		<a href="feed.html">
-	<img src="images/topBannerFitProfile.png" alt="YooHoo logo" >
-	</a>
-    </div>
-    <div class= "menuItems"><a href="PrivacyPolicy/privacypolicy.html">Privacy Policy</a></div>
-    <div class= "menuItems"><a href="Clicker/clicker.html">Game</a></div>
-    <div class= "menuItems"><a href="yourprofile.html">Your Profile</a></div>
-    <div class= "menuItems"><a href="feed.html">Feed</a></div>
-  </div>
+	<!--Top banner:-->
+	<div class="topBannerBack">
+		<div class="topBannerFrontLeft">
+			<a href="feed.html">
+				<img src="images/topBannerFitProfile.png" alt="YooHoo logo">
+			</a>
+		</div>
+		<div class="menuItems"><a href="PrivacyPolicy/privacypolicy.html">Privacy Policy</a></div>
+		<div class="menuItems"><a href="Clicker/clicker.html">Game</a></div>
+		<div class="menuItems"><a href="yourprofile.html">Your Profile</a></div>
+		<div class="menuItems"><a href="feed.html">Feed</a></div>
+	</div>
 
+	<!--side bar-->
 	<div id="mySidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<p id="profilename">Tallulah Suarez</p>
 		<img id="profilePic" src="images/Tallulah.png" alt="Tallulah">
 		<div id="bio">
-		<p>Social points:</p>
-		<li>142 sp (novice)</li>
-		<p>Gender: </p>
-		<li>Female</li>
-		<p>Birth: </p>
-		<li>January 16, 1976 </li>
-		<p>Age: </p>
-		<li>43 years old</li>
-		<p>Email: </p>
-		<li>Loony.Lulah @email.com</li>
-		<p>Phone number:</p>
-		<li>575-538-3672</li>
-		<p>Address: </p>
-		<li>515 W College Ave, Silver City, NM 88061, United States</li>
-		<p>Religion: </p>
-		<li>Christian, Protestant</li>
-		<p>Physical properties:</p>
-		<p>Height</p>
-		<li>5' 3" (160cm)</li>
-		<p>Weight</p>
-		<li>190.2 lbs</li>
-		<p>Employment information:
-		<p>Company: </p>
-		<li>Omni Superstore</li>
-		<p>Title: </p>
-		<li>Cashier</li>
-		<p>Annual salary: </p>
-		<li>$ 19,000</li>
-
-
+			<p>Social points:</p>
+			<li>142 sp (novice)</li>
+			<p>Gender: </p>
+			<li>Female</li>
+			<p>Birth: </p>
+			<li>January 16, 1976 </li>
+			<p>Age: </p>
+			<li>43 years old</li>
+			<p>Email: </p>
+			<li>Loony.Lulah @email.com</li>
+			<p>Phone number:</p>
+			<li>575-538-3672</li>
+			<p>Address: </p>
+			<li>515 W College Ave, Silver City, NM 88061, United States</li>
+			<p>Religion: </p>
+			<li>Christian, Protestant</li>
+			<p>Physical properties:</p>
+			<p>Height</p>
+			<li>5' 3" (160cm)</li>
+			<p>Weight</p>
+			<li>190.2 lbs</li>
+			<p>Employment information:</p>
+			<p>Company: </p>
+			<li>Omni Superstore</li>
+			<p>Title: </p>
+			<li>Cashier</li>
+			<p>Annual salary: </p>
+			<li>$ 19,000</li>
 		</div>
 	</div>
-
 
 	<span style="font-size:30px;cursor:pointer; margin-top: 90px" onclick="openNav()">
-	<img style="cursor:pointer; width:55px; height:55px; vertical-align:sub; margin-left: 10px"
-	onclick="openNav()" src="images/Tallulah.png" alt="Tallulah"> Profile
+		<img style="cursor:pointer; width:55px; height:55px; vertical-align:sub; margin-left: 10px" onclick="openNav()" src="images/Tallulah.png" alt="Tallulah"> Profile
 	</span>
 
-
 	<div class="feed">
+		<!--post #1:-->
 		<p id="postHeader">Tallulah turned on Location Sharing and gained 12 Social Points!</p>
 		<div id="post" class="post">
-		<img class="blur" id="locationImage" src="images/location.png" alt="location">
-		<p id="pleaseLogin"> More Social Points Are Required To View This Info!
-		</p>
+			<img class="blur" id="locationImage" src="images/location.png" alt="location">
+			<p id="pleaseLogin"> More Social Points Are Required To View This Info!
+			</p>
+			<p class="iconsRuleDivider"></p>
+			<!--Icons-->
+			<div class="postIcons">
+				<!--Share your info icon-->
+				<img src="images/shareYourDataIcon.png" alt="share your data icon" onclick="alert('Thank you for your interest in sharing some information with us, we will get there by the end of the guided tour.')">
+				<p>Share your<br>personal information</p>
+				<!--Share this info icon-->
+				<img src="images/shareIcon.png" alt="share this post" onclick="alert('Thanks to you, more people will see this user's information. Keep going if you want YooHoo to better understand your interests!')">
+				<p>Share this<br>information</p>
+				<!--Like icon-->
+				<img src="images/likeIcon.png" alt="like icon" onclick="alert('Thank you for your like. Keep going if you want YooHoo to better understand your interests!')">
+				<p>Like this<br>information</p>
+			</div>
 		</div>
 
-		<p id="postHeader">Tallulah posted:</p>
-		<div id="post" class="post">Just watched the latest Fantastic Beasts movie and am DYING for another one!!!</div>
+		<br>
 
+		<!--post #2:-->
+		<p id="postHeader">Tallulah posted:</p>
+		<div id="post" class="post">
+			Just watched the latest Fantastic Beasts movie and am DYING for another one!!!
+			<p class="iconsRuleDivider"></p>
+			<!--Icons-->
+			<div class="postIcons">
+				<!--Share your info icon-->
+				<img src="images/shareYourDataIcon.png" alt="share your data icon" onclick="alert('Thank you for your interest in sharing some information with us, we will get there by the end of the guided tour.')">
+				<p>Share your<br>personal information</p>
+				<!--Share this info icon-->
+				<img src="images/shareIcon.png" alt="share this post" onclick="alert('Thanks to you, more people will see this user's information. Keep going if you want YooHoo to better understand your interests!')">
+				<p>Share this<br>information</p>
+				<!--Like icon-->
+				<img src="images/likeIcon.png" alt="like icon" onclick="alert('Thank you for your like. Keep going if you want YooHoo to better understand your interests!')">
+				<p>Like this<br>information</p>
+			</div>
+		</div>
+
+		<br>
+
+		<!--post #3:-->
 		<p id="postHeader">Tallulah shared an image</p>
 		<div id="post" class="lastpost">
-		<div id="imageBacker">
-		<img id="imagePost" src="images/minionMeme.jpg" alt="minion">
+			<div id="imageBacker">
+				<img id="imagePost" src="images/minionMeme.jpg" alt="minion">
+			</div>
+			<p class="iconsRuleDivider"></p>
+			<!--Icons-->
+			<div class="postIcons">
+				<!--Share your info icon-->
+				<img src="images/shareYourDataIcon.png" alt="share your data icon" onclick="alert('Thank you for your interest in sharing some information with us, we will get there by the end of the guided tour.')">
+				<p>Share your<br>personal information</p>
+				<!--Share this info icon-->
+				<img src="images/shareIcon.png" alt="share this post" onclick="alert('Thanks to you, more people will see this user's information. Keep going if you want YooHoo to better understand your interests!')">
+				<p>Share this<br>information</p>
+				<!--Like icon-->
+				<img src="images/likeIcon.png" alt="like icon" onclick="alert('Thank you for your like. Keep going if you want YooHoo to better understand your interests!')">
+				<p>Like this<br>information</p>
+			</div>
 		</div>
-		</div>
-
 	</div>
 
-	</body>
+</body>
+
 </html>

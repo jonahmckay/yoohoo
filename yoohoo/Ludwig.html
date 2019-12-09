@@ -1,100 +1,145 @@
 <!doctype html>
 <html>
-<head>
-<link rel="icon" href="favicon.ico" type="image/x-icon"/>
-<link href="style/profilestyle.css" rel="stylesheet" type="text/css">
-<script src="js/sidebar.js"></script>
-<style>
-.blur {-webkit-filter: blur(4px);filter: blur(4px);}
 
-</style>
+<head>
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link href="style/profilestyle.css" rel="stylesheet" type="text/css">
+	<script src="js/sidebar.js"></script>
+	<style>
+		.blur {
+			-webkit-filter: blur(4px);
+			filter: blur(4px);
+		}
+	</style>
 
 </head>
 
-	<body style="background-color: #B9E2FA">
+<body style="background-color: #B9E2FA">
 
 	<!--Top banner:-->
-  <div class="topBannerBack">
-  	<div class="topBannerFrontLeft">
-		<a href="feed.html">
-	<img src="images/topBannerFitProfile.png" alt="YooHoo logo" >
-	</a>
-    </div>
-    <div class= "menuItems"><a href="PrivacyPolicy/privacypolicy.html">Privacy Policy</a></div>
-    <div class= "menuItems"><a href="Clicker/clicker.html">Game</a></div>
-    <div class= "menuItems"><a href="yourprofile.html">Your Profile</a></div>
-    <div class= "menuItems"><a href="feed.html">Feed</a></div>
-  </div>
+	<div class="topBannerBack">
+		<div class="topBannerFrontLeft">
+			<a href="feed.html">
+				<img src="images/topBannerFitProfile.png" alt="YooHoo logo">
+			</a>
+		</div>
+		<div class="menuItems"><a href="PrivacyPolicy/privacypolicy.html">Privacy Policy</a></div>
+		<div class="menuItems"><a href="Clicker/clicker.html">Game</a></div>
+		<div class="menuItems"><a href="yourprofile.html">Your Profile</a></div>
+		<div class="menuItems"><a href="feed.html">Feed</a></div>
+	</div>
 
+	<!--side bar-->
 	<div id="mySidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<p id="profilename">Ludwig Braunstein</p>
 		<img id="profilePic" src="images/LudwigBraunstein.png" alt="Ludwig">
 		<div id="bio">
-		<p>Social points:</p>
-		<li>2061 sp (novice)</li>
-		<p>Gender: </p>
-		<li>Male</li>
-		<p>Birth: </p>
-		<li>June 7, 1971 </li>
-		<p>Age: </p>
-		<li>48 years old</li>
-		<p>Email: </p>
-		<li>ludwig.braunstein @email.com</li>
-		<p>Phone number:</p>
-		<li>04136 41 31 48</li>
-		<p>Address: </p>
-		<li> Inge Beisheim Platz 63, Lüdersburg, Niedersachsen, Germany, 21379</li>
-		<p>Religion: </p>
-		<li>None (Atheist/Agnostic)</li>
-		<p>Physical properties:</p>
-		<p>Height</p>
-		<li>180 cm</li>
-		<p>Weight</p>
-		<li>60.4 kg</li>
-		<p>Employment information:
-		<p>Company: </p>
-		<li>Fortschrittliche Elektronik</li>
-		<p>Title: </p>
-		<li>Radio Mechanic</li>
-		<p>Annual salary: </p>
-		<li> 39 000 €</li>
-
-
+			<p>Social points:</p>
+			<li>2061 sp (novice)</li>
+			<p>Gender: </p>
+			<li>Male</li>
+			<p>Birth: </p>
+			<li>June 7, 1971 </li>
+			<p>Age: </p>
+			<li>48 years old</li>
+			<p>Email: </p>
+			<li>ludwig.braunstein @email.com</li>
+			<p>Phone number:</p>
+			<li>04136 41 31 48</li>
+			<p>Address: </p>
+			<li> Inge Beisheim Platz 63, Lüdersburg, Niedersachsen, Germany, 21379</li>
+			<p>Religion: </p>
+			<li>None (Atheist/Agnostic)</li>
+			<p>Physical properties:</p>
+			<p>Height</p>
+			<li>180 cm</li>
+			<p>Weight</p>
+			<li>60.4 kg</li>
+			<p>Employment information:</p>
+			<p>Company: </p>
+			<li>Fortschrittliche Elektronik</li>
+			<p>Title: </p>
+			<li>Radio Mechanic</li>
+			<p>Annual salary: </p>
+			<li> 39 000 €</li>
 		</div>
 	</div>
-
 
 	<span style="font-size:30px;cursor:pointer; margin-top: 90px" onclick="openNav()">
-	<img style="cursor:pointer; width:55px; height:55px; vertical-align:sub; margin-left: 10px"
-	onclick="openNav()" src="images/LudwigBraunstein.png" alt="Ludwig"> Profile
+		<img style="cursor:pointer; width:55px; height:55px; vertical-align:sub; margin-left: 10px" onclick="openNav()" src="images/LudwigBraunstein.png" alt="Ludwig"> Profile
 	</span>
 
-
 	<div class="feed">
+		<!--post #1:-->
 		<p id="postHeader">Ludwig turned on Location Sharing and gained 35 Social Points!</p>
-
 		<div id="post" class="post">
-		<img class="blur" id="locationImage" src="images/location.png" alt="location">
-		<p id="pleaseLogin"> More Social Points Are Required To View This Info!
-		</p>
+			<img class="blur" id="locationImage" src="images/location.png" alt="location">
+			<p id="pleaseLogin"> More Social Points Are Required To View This Info!
+			</p>
+			<p class="iconsRuleDivider"></p>
+			<!--Icons-->
+			<div class="postIcons">
+				<!--Share your info icon-->
+				<img src="images/shareYourDataIcon.png" alt="share your data icon" onclick="alert('Thank you for your interest in sharing some information with us, we will get there by the end of the guided tour.')">
+				<p>Share your<br>personal information</p>
+				<!--Share this info icon-->
+				<img src="images/shareIcon.png" alt="share this post" onclick="alert('Thanks to you, more people will see this user's information. Keep going if you want YooHoo to better understand your interests!')">
+				<p>Share this<br>information</p>
+				<!--Like icon-->
+				<img src="images/likeIcon.png" alt="like icon" onclick="alert('Thank you for your like. Keep going if you want YooHoo to better understand your interests!')">
+				<p>Like this<br>information</p>
+			</div>
 		</div>
 
+		<br>
+
+		<!--post #2:-->
 		<p id="postHeader">Ludwig posted:</p>
 		<div id="post" class="post">Pre-ordered the new Cybertruck. Looks strange, but I appreciate the effort to make eco-friendly transport.
-		<p> #tesla #ecofriendly</p>
+			<p> #tesla #ecofriendly</p>
+			<p class="iconsRuleDivider"></p>
+			<!--Icons-->
+			<div class="postIcons">
+				<!--Share your info icon-->
+				<img src="images/shareYourDataIcon.png" alt="share your data icon" onclick="alert('Thank you for your interest in sharing some information with us, we will get there by the end of the guided tour.')">
+				<p>Share your<br>personal information</p>
+				<!--Share this info icon-->
+				<img src="images/shareIcon.png" alt="share this post" onclick="alert('Thanks to you, more people will see this user's information. Keep going if you want YooHoo to better understand your interests!')">
+				<p>Share this<br>information</p>
+				<!--Like icon-->
+				<img src="images/likeIcon.png" alt="like icon" onclick="alert('Thank you for your like. Keep going if you want YooHoo to better understand your interests!')">
+				<p>Like this<br>information</p>
+			</div>
 		</div>
 
+		<br>
+
+		<!--post #3:-->
 		<p id="postHeader">Ludwig shared an image</p>
 		<div id="post" class="lastpost">
-		<p>Bahahaha!</p>
-		<br>
-		<div id="imageBacker">
-		<img id="imagePost" src="images/cybertruck.jpg" alt="imagepost">
-		</div>
+			<p>Bahahaha!</p>
+			<br>
+			<div id="imageBacker">
+				<img id="imagePost" src="images/cybertruck.jpg" alt="imagepost">
+			</div>
+			<p class="iconsRuleDivider"></p>
+			<!--Icons-->
+			<div class="postIcons">
+				<!--Share your info icon-->
+				<img src="images/shareYourDataIcon.png" alt="share your data icon" onclick="alert('Thank you for your interest in sharing some information with us, we will get there by the end of the guided tour.')">
+				<p>Share your<br>personal information</p>
+				<!--Share this info icon-->
+				<img src="images/shareIcon.png" alt="share this post" onclick="alert('Thanks to you, more people will see this user's information. Keep going if you want YooHoo to better understand your interests!')">
+				<p>Share this<br>information</p>
+				<!--Like icon-->
+				<img src="images/likeIcon.png" alt="like icon" onclick="alert('Thank you for your like. Keep going if you want YooHoo to better understand your interests!')">
+				<p>Like this<br>information</p>
+			</div>
 		</div>
 
 	</div>
 
-	</body>
+</body>
+
 </html>
