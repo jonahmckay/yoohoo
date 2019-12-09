@@ -176,4 +176,5 @@ color: white;
 			font-size: 30px;
 			font-weight: bold;
 			transform: rotate(-8deg);
+			z-index: -1;
 		}

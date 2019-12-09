@@ -44,7 +44,7 @@ body
 	border: none;
 	background-color: #aaa;
 	cursor:pointer;
-	transition: 0.2s;
+	transition: 0s;
 }
 
 .actionButton:hover {
