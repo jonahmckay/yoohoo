@@ -5,12 +5,7 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 	<link href="style/profilestyle.css" rel="stylesheet" type="text/css">
 	<script src="js/sidebar.js"></script>
-	<style>
-		.blur {
-			-webkit-filter: blur(4px);
-			filter: blur(4px);
-		}
-	</style>
+
 
 </head>
 
@@ -67,14 +62,15 @@
 	</div>
 
 	<span style="font-size:30px;cursor:pointer; margin-top: 90px" onclick="openNav()">
-		<img style="cursor:pointer; width:55px; height:55px; vertical-align:sub; margin-left: 10px" onclick="openNav()" src="images/LudwigBraunstein.png" alt="Ludwig"> Profile
+		<img style="cursor:pointer; width:55px; height:55px; vertical-align:sub; margin-left: 10px" 
+		onclick="openNav()" src="images/LudwigBraunstein.png" alt="Ludwig"> Profile
 	</span>
 
 	<div class="feed">
 		<!--post #1:-->
 		<p id="postHeader">Ludwig turned on Location Sharing and gained 35 Social Points!</p>
 		<div id="post" class="post">
-			<img class="blur" id="locationImage" src="images/location.png" alt="location">
+			<img id="locationImage" src="images/location.png" alt="location">
 			<p id="pleaseLogin"> More Social Points Are Required To View This Info!
 			</p>
 			<p class="iconsRuleDivider"></p>
@@ -118,7 +114,7 @@
 		<!--post #3:-->
 		<p id="postHeader">Ludwig shared an image</p>
 		<div id="post" class="lastpost">
-			<p>Bahahaha!</p>
+			<p style="font-weight: normal">Bahahaha!</p>
 			<br>
 			<div id="imageBacker">
 				<img id="imagePost" src="images/cybertruck.jpg" alt="imagepost">
